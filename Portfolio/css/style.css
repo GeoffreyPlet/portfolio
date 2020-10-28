@@ -1,0 +1,125 @@
+
+ul{
+    padding: 0;
+}
+.pointer{
+    cursor: pointer;
+}
+.my-logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.my-logo a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.my-logo{
+    font-size: 1.5em;
+    display: inline-block;
+    border: 2px solid #fff;
+    padding: 12px;
+}
+.btn-primary{
+    background-color: #343a40 !important;
+    border-color: #343a40 !important;
+}
+.btn-primary:hover{
+    background-color: #5a5b5d !important;
+    border-color: #5a5b5d !important;
+}
+.btn-primary:focus{
+    border-color: #5a5b5d !important;
+    box-shadow: 10px 5px 5px black !important;
+}
+
+/* DEBUT Class header */
+header{
+    height: 100%;
+    background-image: url(../img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header nav{
+    position: fixed !important;
+    width: 100%;
+    z-index: 1;
+}
+header .filtre{
+    height: 120%;
+    background-color: #000;
+    position: absolute;
+    opacity: 0.4;
+    top: 0px;
+    width: 100%;
+}
+@media (max-width: 992px){
+    header nav ul{
+        justify-content: space-around;
+        padding-top: 24px;
+    }
+}
+    /* DEBUT Class #after-header */
+    #after-header{
+        height: 969px;
+    }
+    /* FIN Class #after-header */
+
+/* FIN Class header */
+
+/* DEBUT Class main */
+
+    /* DEBUT Class #demos */
+    #demos{
+        padding: 84px 0px;
+    }
+    #demos .cadre{
+        
+        cursor: pointer;
+        height: 260px;
+        transition: 0.5s;
+        transform: scale(0.75);
+    }
+    #demos .cadre:hover{
+        transform: scale(1);
+        background-position: bottom;
+    }
+    #demos ul li{
+        list-style: none;
+    }
+    #demos .projet-maquette{
+        background-image: url(../img/maquette.PNG);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* FIN Class #demos */
+
+    /* DEBUT Class #devis */
+     #competence{
+        padding: 84px 0px;
+    }
+    #devis{
+        background-color: #6c757d;
+    }
+    /* FIN Class #devis */
+
+    /* DEBUT Class #contact */
+    #contact{
+        padding: 84px 0px;
+    }
+    /* FIN Class #contact */
+
+/* FIN Class main */
+
+/* DEBUT Class footer */
+footer ul li{
+    list-style: none;
+}
+footer h3{
+    font-size: 1em;
+}
+/* FIN Class footer */
+
+
+
+

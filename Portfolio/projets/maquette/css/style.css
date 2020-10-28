@@ -1,0 +1,224 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.text-w{
+    color: #fff;
+}
+.my-btn-green{
+    background-color: #3ecf8e !important;
+    color: #fff !important;
+    border-color: #3ecf8e !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-weight: 700 !important;
+}
+.my-btn-green:hover{
+    background-color: #fff !important;
+    color: #3ecf8e !important;
+}
+.my-btn-white{
+    background-color: #fff !important;
+    color: #3ecf8e !important;
+    border-color: #fff !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-weight: 700 !important;
+}
+.my-btn-white:hover{
+    background-color: #3ecf8e !important;
+    color: #fff !important;
+}
+h2{
+    font-size: 2.5em !important;
+}
+
+/* DEBUT Class Header */
+header{
+    height: 720px;
+    width: 125%;
+    transform: rotateZ(-10deg);
+    left: -15%;
+    top: -160px;
+    background: rgb(85,50,254);
+    background: linear-gradient(90deg, rgba(85,50,254,1) 51%, rgba(40,219,245,1) 100%);
+}
+.decoration-top{
+    height: 140px;
+    width: 500px;
+    background: rgb(85,50,254);
+    background: linear-gradient(90deg, rgba(85,50,254,1) 0%, rgba(40,219,245,1) 90%);
+    position: absolute;
+    top: 13%;
+    left: 30%;
+
+}
+.decoration-bottom{
+    height: 120px;
+    width: 500px;
+    background: rgb(85,50,254);
+    background: linear-gradient(106deg, rgba(85,50,254,1) 51%, rgba(40,219,245,1) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    height: 180px;
+    width: 693px;
+}
+/* FIN Class Header */
+
+
+/* DEBUT Class #after-header  */
+#after-header nav .my-btn-nav{
+    background-color: #80cafb;
+    border-color: #80cafb;
+    font-weight: 700;
+
+}
+#after-header nav .my-btn-nav:hover{
+    background: rgb(128,202,251);
+background: linear-gradient(106deg, rgba(128,202,251,1) 0%, rgba(40,219,245,1) 76%);
+border-color:rgba(40,219,245,1);
+
+}
+#after-header nav a, #after-header p{
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #fff;
+}
+
+#after-header{
+    height: 800px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#after-header .row{
+    padding-top: 6em;
+}
+@media (max-width: 994px){
+    #after-header img{
+        display: none;
+    }
+}
+
+/* FIN Class #after-header  */
+
+/* DEBUT Class #section-1 */
+#section-1 svg{
+    height: 38px;
+    width: 38px;
+}
+#section-1 .col-lg-6 div:first-child{
+    border: 2px solid #3ecf8e;
+    color: #3ecf8e;
+    height: 74px;
+    width: 74px;
+    background-color: #e3fff1;
+}
+/* FIN Class #section-1 */
+
+
+/* DEBUT Class #section-2 */
+#section-2{
+    background-color: #f9f9f9;
+}
+#section-2 .list-group-item{
+    background-color: transparent;
+    border: none;
+}
+#section-2 .my-border{
+    border: 1px solid #ededed;
+}
+#section-2 .row p{
+    color: #3ecf8e;
+    font-weight: 700;
+    font-size: 3em;
+}
+#section-2 .my-btn-white{
+    background-color: #fff !important;
+    color: #3ecf8e !important;
+    border-color: #3ecf8e !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    font-weight: 700 !important;
+}
+#section-2 .my-btn-white:hover{
+    background-color: #3ecf8e !important;
+    color: #fff !important;
+}
+@media (max-width: 1199px){
+    #section-2 .row {
+        flex-wrap: wrap !important;
+    }
+}
+/* FIN Class #section-2 */
+
+/* DEBUT Class footer */
+footer{
+    background-color: #170d28;
+    color: #fff;
+}
+footer .list-group-item{
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+footer h3{
+    font-size: 1em;
+}
+footer li, footer p{
+    font-size: 0.75em;
+    opacity: 0.8;
+}
+footer .input-group-text{
+    background-color: #3ecf8e;
+    border: 1px solid #3ecf8e;
+    color: #fff;
+    cursor: pointer;
+}
+footer li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer li a:hover{
+    text-decoration: none;
+    color: #3ecf8e;
+}
+@media (max-width: 768px){
+    footer{
+        text-align: center !important;
+    }
+    footer h3{
+        padding-top: 1em;
+    }
+}
+@media (min-width: 768px){
+    footer{
+        text-align: center !important;
+    }
+    footer h3{
+        padding-top: 1em;
+    }
+}
+/* FIN Class footer */
+
+/* DEBUT Class #after-footer */
+#after-footer{
+    border-top: 2px solid #2d1753;
+}
+#after-footer a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    background-color: #2d1753;
+    transform: rotate(-90deg);
+
+}
+#after-footer p span{
+
+    color: #3ecf8e;
+
+
+}
+#after-footer a:hover{
+    text-decoration: none ;
+    
+}
+/* FIN Class #after-footer */
