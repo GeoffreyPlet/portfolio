@@ -1,6 +1,7 @@
 
-
-
+  window.addEventListener('load', function(event){
+    alert('En continuant vous acceptez que certainnes fonctionnalité ne fonction pas. Site en cour de création.');
+  });
     $(document).ready(function(){
 
       $('.front-1').click(function(){
