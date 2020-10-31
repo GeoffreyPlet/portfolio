@@ -118,6 +118,15 @@ footer ul li{
 footer h3{
     font-size: 1em;
 }
+footer a{
+    text-decoration: underline;
+    color: #fff;
+    opacity: 0.8;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #fff;
+}
 /* FIN Class footer */
 
 
