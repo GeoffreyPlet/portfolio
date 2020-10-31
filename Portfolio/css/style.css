@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'PT Sans', 'sans-serif' !important;
+}
 ul{
     padding: 0;
 }
@@ -128,6 +130,29 @@ footer a:hover{
     color: #fff;
 }
 /* FIN Class footer */
+
+/* DEBUT modal */
+    /* DEBUT modal devis */
+    #modal-devis .cadre{
+        
+        color: #000;
+    }
+    #modal-devis .cadre:hover{
+        cursor: pointer;
+        background-color: #000;
+        color: #fff;
+    }
+    #modal-devis h2{
+        font-size: 22px;
+    }
+    #modal-devis h3{
+        font-size: 1.17em;
+    }
+    #modal-devis .form-check-label{
+        font-size: 11px;
+    }
+    /* FIN modal devis */
+/* FIN modal */
 
 
 
