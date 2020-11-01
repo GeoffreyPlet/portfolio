@@ -127,12 +127,15 @@ function navFunction(){
   var domaines = [document.getElementById('radio-domaine-sans'), document.getElementById('radio-domaine-avec')];
   var chaineDomaine = document.createElement('p');;
   var verifDomaine = 0;
+  var prixDomain = 0;
 
   var admins = [document.getElementById('radio-administration-sans'), document.getElementById('radio-administration-avec'), document.getElementById('radio-administration-avec-plus')];
   var chaineAdmin = document.createElement('p');;
   var verifAdmin = 0;
+  var prixAdmin = 0;
 
   var verfiPrix = 0;
+  var prixTotal = 0;
 
   /* DEBUT TYPE */
 
@@ -320,22 +323,23 @@ function navFunction(){
         //STRING value
 
         chaineDomaine.textContent ='Chois du domaine et de l\'hébergement:';
-        chaineDomaine.classList.add('m-0');
+        chaineDomaine.classList.add('m-0', 'mt-5', 'font-size-13');
         detailTop.appendChild(chaineDomaine);
 
         chaineDomaine = document.createElement('p');
-        chaineDomaine.textContent = 'Sans domaine n\'y hébergement';
-        chaineDomaine.classList.add('text-uppercase');
+        chaineDomaine.textContent = '0€   -   Sans domaine n\'y hébergement';
+        chaineDomaine.classList.add('text-uppercase', 'font-weight-light', 'font-size-13');
         detailTop.appendChild(chaineDomaine);
 
         verifDomaine = 1;
       }
       else{
-        chaineDomaine.textContent = 'Sans domaine n\'y hébergement';
+        chaineDomaine.textContent = '0€   -   Sans domaine n\'y hébergement';
       }
 
       //SAVE value
       devisObject.domaine = domaines[0].value;
+      prixDomain = 0;
 
       //SHOW next step
       document.getElementById('administration').hidden = false;
@@ -349,22 +353,23 @@ function navFunction(){
         //STRING value
 
         chaineDomaine.textContent ='Chois du domaine et de l\'hébergement:';
-        chaineDomaine.classList.add('m-0');
+        chaineDomaine.classList.add('m-0', 'mt-5', 'font-size-13');
         detailTop.appendChild(chaineDomaine);
 
         chaineDomaine = document.createElement('p');
-        chaineDomaine.textContent = 'Avec domaine et hébergement';
-        chaineDomaine.classList.add('text-uppercase');
+        chaineDomaine.textContent = '50€   -   Avec domaine et hébergement';
+        chaineDomaine.classList.add('text-uppercase', 'font-weight-light', 'font-size-13');
         detailTop.appendChild(chaineDomaine);
 
         verifDomaine = 1;
       }
       else{
-        chaineDomaine.textContent = 'Avec domaine et hébergement';
+        chaineDomaine.textContent = '50€   -   Avec domaine et hébergement';
       }
 
       //SAVE value
       devisObject.domaine = domaines[1].value;
+      prixDomain = 50;
 
       //SHOW next step
       document.getElementById('administration').hidden = false;
@@ -376,35 +381,41 @@ function navFunction(){
 
       
 
-      if(verfiPrix == 0){
-        chaineDetailBot.textContent = 'Prix site vitrine';
-        detailBot.appendChild(chaineDetailBot);
-      }
-      else{
-        chaineDetailBot.textContent = 'Prix site vitrine';
-      }
+      
+
        //VERIF
        if(verifAdmin == 0)
        {
          //STRING value
  
          chaineAdmin.textContent ='Option d\'administration:';
-         chaineAdmin.classList.add('m-0');
+         chaineAdmin.classList.add('m-0', 'mt-5', 'font-size-13');
          detailTop.appendChild(chaineAdmin);
  
          chaineAdmin = document.createElement('p');
-         chaineAdmin.textContent = 'Sans administration';
-         chaineAdmin.classList.add('text-uppercase');
+         chaineAdmin.textContent = '0€   -   Sans administration';
+         chaineAdmin.classList.add('text-uppercase', 'font-weight-light', 'font-size-13');
          detailTop.appendChild(chaineAdmin);
  
          verifAdmin = 1;
        }
        else{
-        chaineAdmin.textContent = 'Sans administration';
+        chaineAdmin.textContent = '0€   -   Sans administration';
        }
 
       //SAVE value
       devisObject.admin = admins[0].value;
+      prixAdmin = 0;
+      prixTotal = prixType + prixCharte + prixDomain + prixAdmin;
+
+
+      if(verfiPrix == 0){
+        chaineDetailBot.textContent = prixTotal+'€';
+        detailBot.appendChild(chaineDetailBot);
+      }
+      else{
+        chaineDetailBot.textContent = prixTotal+'€';
+      }
 
       //SHOW next step
       document.getElementById('go-devis').hidden = false;
@@ -412,7 +423,7 @@ function navFunction(){
 
     admins[1].addEventListener('click', function(){
 
-      console.log(devisObject.admin + devisObject.charte + devisObject.domaine + devisObject.type);
+
       
 
       if(verfiPrix == 0){
@@ -429,22 +440,33 @@ function navFunction(){
         //STRING value
 
         chaineAdmin.textContent ='Option d\'administration:';
-        chaineAdmin.classList.add('m-0');
+        chaineAdmin.classList.add('m-0', 'mt-5', 'font-size-13');
         detailTop.appendChild(chaineAdmin);
 
         chaineAdmin = document.createElement('p');
-        chaineAdmin.textContent = 'Avec administration';
-        chaineAdmin.classList.add('text-uppercase');
+        chaineAdmin.textContent = '400€   -   Avec administration';
+        chaineAdmin.classList.add('text-uppercase', 'font-weight-light', 'font-size-13');
         detailTop.appendChild(chaineAdmin);
 
         verifAdmin = 1;
       }
       else{
-       chaineAdmin.textContent = 'Avec administration';
+       chaineAdmin.textContent = '400€   -   Avec administration';
       }
 
       //SAVE value
       devisObject.admin = admins[1].value;
+      prixAdmin = 400;
+      prixTotal = prixType + prixCharte + prixDomain + prixAdmin;
+
+
+      if(verfiPrix == 0){
+        chaineDetailBot.textContent = prixTotal+'€';
+        detailBot.appendChild(chaineDetailBot);
+      }
+      else{
+        chaineDetailBot.textContent = prixTotal+'€';
+      }
 
       //SHOW next step
       document.getElementById('go-devis').hidden = false;
@@ -452,7 +474,6 @@ function navFunction(){
 
     admins[2].addEventListener('click', function(){
 
-      console.log(devisObject.admin + devisObject.charte + devisObject.domaine + devisObject.type);
 
       if(verfiPrix == 0){
         chaineDetailBot.textContent = 'Prix site e-commerce';
@@ -468,27 +489,40 @@ function navFunction(){
         //STRING value
 
         chaineAdmin.textContent ='Option d\'administration:';
-        chaineAdmin.classList.add('m-0');
+        chaineAdmin.classList.add('m-0', 'mt-5', 'font-size-13');
         detailTop.appendChild(chaineAdmin);
 
         chaineAdmin = document.createElement('p');
-        chaineAdmin.textContent = 'Administration personnalisé';
-        chaineAdmin.classList.add('text-uppercase');
+        chaineAdmin.textContent = '1 200€   -   Administration personnalisé';
+        chaineAdmin.classList.add('text-uppercase', 'font-weight-light', 'font-size-13');
         detailTop.appendChild(chaineAdmin);
 
         verifAdmin = 1;
       }
       else{
-       chaineAdmin.textContent = 'Administration personnalisé';
+       chaineAdmin.textContent = '1 200€   -   Administration personnalisé';
       }
 
       //SAVE value
       devisObject.admin = admins[2].value;
+      prixAdmin = 1200;
+      prixTotal = prixType + prixCharte + prixDomain + prixAdmin;
+
+
+      if(verfiPrix == 0){
+        chaineDetailBot.textContent = prixTotal+'€';
+        detailBot.appendChild(chaineDetailBot);
+      }
+      else{
+        chaineDetailBot.textContent = prixTotal+'€';
+      }
 
       //SHOW next step
       document.getElementById('go-devis').hidden = false;
     });
   /* FIN ADMINISTRATION */
+
+  
 
   console.log(chartes +' '+domaines[0].value+' '+ admins[2].value);
 /* FIN JS modal devis */
