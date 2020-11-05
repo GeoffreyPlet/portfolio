@@ -97,6 +97,12 @@ header .filtre{
         background-repeat: no-repeat;
         background-size: cover;
     }
+    #demos .projet-jeux{
+        background-image: url(../img/jeux.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -24px;
+    }
     /* FIN Class #demos */
 
     /* DEBUT Class #devis */

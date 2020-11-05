@@ -8,6 +8,9 @@
       $('.front-1').click(function(){
         window.open('projets/maquette/index.html', '_blank');
       });
+      $('.projet-jeux').click(function(){
+        window.open('projets/JEUX/index.html', '_blank');
+      });
       
         $("#btn-back").click(function(){
             $("#vuejs").animate({
