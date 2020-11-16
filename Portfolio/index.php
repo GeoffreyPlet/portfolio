@@ -41,11 +41,6 @@
                         geoffrey
                     </a>                   
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                </div>
             </div>
             
           </nav>
@@ -56,33 +51,6 @@
                 
         </div>
         <!-- FIN Filtre after-header -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-                
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         <!--- DEBUT after-header -->
@@ -101,13 +69,6 @@
 
                 <div class="col-lg-12 position-absolute" style="bottom:20px; z-index: 2;">
                     <div class="card text-center">
-                        <div class="card-header">
-                            <h2>Tarif</h2>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Freelance 0 - 2 ans d'expérience</h5>
-                            <p class="card-text">175€ - Jour Homme</p>
-                        </div>
                         <div class="card-footer text-muted">
                             Prix modulabe selon les besoins du projet.
                         </div>
@@ -193,7 +154,7 @@
         <section id="demos" class="container">
             <h2 class="text-uppercase text-center">Geoffrey <span class="text-warning">projets</span></h2>
             <hr class="w-25">
-            <p class="text-center">Selecter un projet</p>
+            <p class="text-center">Sélectionner un projet</p>
             <div class="row pt-5">
                 <ul class="text-uppercase d-flex w-100 justify-content-around">
                     <li class="pointer" onclick="affiche('all')" id="btn-all">Tout</li>
@@ -225,7 +186,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <a href="https://www.planspluriel.fr/">
+                    <a href="https://www.planspluriel.fr/" target="_blank">
                         <div class="cadre planspluriel">
 
                         </div>
@@ -261,7 +222,7 @@
             <!-- DEBUT zone projets back -->
             <div class="row text-center" id="back" style="display: none;">
             <div class="col-lg-4 col-md-6">
-                    <a href="https://www.planspluriel.fr/">
+                    <a href="https://www.planspluriel.fr/" target="_blank">
                         <div class="cadre planspluriel">
 
                         </div>
@@ -377,7 +338,7 @@
                                 Mise à niveau
                             </h3>
                             <p class="px-4 ">
-                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jours.<!-- <span class="my-span-color"> Voir les modalités de service.</span>  -->
+                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jour.<!-- <span class="my-span-color"> Voir les modalités de service.</span>  -->
                             </p>
                         </div>
                     </div>
@@ -572,7 +533,6 @@
                 <div class="col-lg-4 text-center">
                     <h3 class="text-uppercase">Lien rapide</h3>
                     <ul class="d-flex justify-content-around flex-column">
-                        <li><a  href="#devis">Devis</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#competence">Compétences</a></li>
                         <li><a href="#demos">Projets</a></li>
