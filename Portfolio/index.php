@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <!--- FIN after-header -->
@@ -455,7 +455,7 @@
     <!-- FIN section #contact -->
 
     <?php
-           /*  if (isset($_POST)){
+            if (isset($_POST)){
             
 
  
@@ -550,7 +550,7 @@
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
             }
- */
+
         ?>
 
         
