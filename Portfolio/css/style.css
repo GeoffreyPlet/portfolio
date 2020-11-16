@@ -59,7 +59,7 @@ header nav{
     z-index: 1;
 }
 header .filtre{
-    height: 120%;
+    height: 980px;
     background-color: #000;
     position: absolute;
     opacity: 0.4;
@@ -134,6 +134,11 @@ header .card-footer{
     #demos a{
         text-decoration: none;
         color: #000;
+    }
+    @media (max-width: 991px){
+        #competence .col-lg-6{
+            border: none !important;
+        }
     }
     /* FIN Class #demos */
 

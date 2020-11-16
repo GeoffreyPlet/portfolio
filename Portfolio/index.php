@@ -69,20 +69,7 @@
 
 
 
-        <div class="col-lg-12 position-absolute" style="bottom:20px; z-index: 2;">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <h2>Tarif</h2>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Freelance 0 - 2 ans d'expérience</h5>
-                        <p class="card-text">175€ - Jour Homme</p>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Prix modulabe selon les besoins du projet.
-                    </div>
-                </div>
-        </div>
+        
                 
 
 
@@ -111,6 +98,21 @@
                 <!-- <div class="text-center">
                     <button type="button" class="btn text-white w-50 btn-primary">Commencer maintenant</button> 
                 </div> -->
+
+                <div class="col-lg-12 position-absolute" style="bottom:20px; z-index: 2;">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h2>Tarif</h2>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Freelance 0 - 2 ans d'expérience</h5>
+                            <p class="card-text">175€ - Jour Homme</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Prix modulabe selon les besoins du projet.
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </section>
@@ -453,7 +455,7 @@
     <!-- FIN section #contact -->
 
     <?php
-            if (isset($_POST)){
+           /*  if (isset($_POST)){
             
 
  
@@ -548,7 +550,7 @@
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
             }
-
+ */
         ?>
 
         
