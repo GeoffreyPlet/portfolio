@@ -29,11 +29,6 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto  flex-row">
-                    <li class="nav-item active">
-                        <a class="nav-link text-white" data-toggle="modal" data-target="#modal-devis" href="">Devis</a>
-                    </li>
-                </ul>
                 </div>
             </div>
             
@@ -301,7 +296,7 @@
                                 Mise à niveau
                             </h3>
                             <p class="px-4 ">
-                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jour (voir les modalités de service).
+                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jours.<span class="my-span-color"> Voir les modalités de service.</span> 
                             </p>
                         </div>
                     </div>
@@ -320,7 +315,7 @@
                                 Maintenance
                             </h3>
                             <p class="px-4">
-                                Besoin d’un développer pour maintenir votre site : ajouts de contenus, debug. Regardez les différents services.
+                                Besoin d’un développeur pour maintenir votre site : ajouts de contenus, debug. <span class="my-span-color">Regardez les différents services.</span>
                             </p>
                         </div>
                     </div>
@@ -331,52 +326,168 @@
         </section>
         <!-- FIN section #competence -->
 
-        <!-- DEBUT section #contact -->
-        <section class="container" id="contact">
-            <h2 class="text-uppercase text-center">Contact</h2>
-            <form class="pt-5">
-                <div class="form-row">
-                  <div class="col form-group">
-                        <label for="first-name">Nom</label>
-                        <input type="text" class="form-control" placeholder="First name" id="first-name">
-                  </div>
-                  <div class="col form-group">
-                        <label for="last-name">Prénom</label>
-                        <input type="text" class="form-control" placeholder="Last name" id="last-name">
-                  </div>
+    <!-- DEBUT section #contact -->
+    <section class="container" id="contact">
+        <h2 class="text-uppercase text-center">Contact</h2>
+        <form class="pt-5" method="POST" action="index.php">
+            <div class="form-row">
+              <div class="col form-group">
+                    <label for="first-name">Nom</label>
+                    <input type="text" class="form-control" placeholder="First name" id="first-name" name="nom">
+              </div>
+              <div class="col form-group">
+                    <label for="last-name">Prénom</label>
+                    <input type="text" class="form-control" placeholder="Last name" id="last-name" name="prenom">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="Email" id="email" name="mail">
                 </div>
-                <div class="form-row">
-                    <div class="col form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" placeholder="Email" id="email">
-                    </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="message">Votre Message</label>
+                    <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
                 </div>
-                <div class="form-row">
-                    <div class="col form-group">
-                        <label for="message">Votre Message</label>
-                        <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici."></textarea>
-                    </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <select class="custom-select" name="chois">
+                        <option selected value="VIDE">Sous quel type de demande souhaitez-vous ?</option>
+                        <option value="Site vitrine">Site vitrine</option>
+                        <option value="Site E-commerce">Site E-commerce</option>
+                        <option value="Application">Application</option>
+                        <option value="Refonte">Refonte</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Mise à niveau">Mise à niveau</option>
+                      </select>
+                      <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
                 </div>
-                <div class="form-row">
-                    <div class="col form-group">
-                        <select class="custom-select">
-                            <option selected>Sous quel type de demande souhaitez-vous ?</option>
-                            <option value="1">Site vitrine</option>
-                            <option value="2">Site E-commerce</option>
-                            <option value="3">Application</option>
-                            <option value="4">Refonte</option>
-                            <option value="5">Maintenance</option>
-                            <option value="6">Mise à niveau</option>
-                          </select>
-                          <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                </div>
-              </form>
-        </section>
-        <!-- FIN section #contact -->
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+    </section>
+    <!-- FIN section #contact -->
+
+    <?php
+            if (isset($_POST)){
+            }
+
+ 
+
+                // Test fonction mail();
+
+                
+
+                // *** A configurer
+
+                
+
+                $to    = "geoffreyplett@gmail.com";
+
+                
+
+                // adresse MAIL OVH liée à l’hébergement.
+
+                $from  = $_POST["mail"];
+
+                
+
+                ini_set("SMTP", "smtp.geoffreyplet.com");   // Pour les hébergements mutualisés Windows de OVH
+
+                
+
+                // *** Laisser tel quel
+
+                
+
+                $JOUR  = date("Y-m-d");
+
+                $HEURE = date("H:i");
+
+                
+
+                $Subject = ''.$_POST['chois'].' - '.$JOUR.' '.$HEURE.'';
+
+                
+
+                $mail_Data = "";
+
+                $mail_Data .= "<html> \n";
+
+                $mail_Data .= "<head> \n";
+
+                $mail_Data .= "<title> Demande de projet </title> \n";
+
+                $mail_Data .= "</head> \n";
+
+                $mail_Data .= "<body> \n";
+
+                
+
+                $mail_Data .= ''.$_POST['nom'].', '.$_POST['prenom'].': <b>'.$Subject.'</b> <br>';
+
+                $mail_Data .= "<br> \n";
+
+                $mail_Data .= ''.$_POST["message"].'<br>';
+
+
+                $mail_Data .= "</body> \n";
+
+                $mail_Data .= "</HTML> \n";
+
+                
+
+                $headers  = "MIME-Version: 1.0 \n";
+
+                $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
+
+                $headers .= "From: $from  \n";
+
+                $headers .= "Disposition-Notification-To: $from  \n";
+
+                
+
+                // Message de Priorité haute
+
+                // -------------------------
+
+                $headers .= "X-Priority: 1  \n";
+
+                $headers .= "X-MSMail-Priority: High \n";
+
+                
+
+                $CR_Mail = TRUE;
+
+                
+
+                $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
+
+                
+
+                if ($CR_Mail === FALSE)
+
+                    {
+
+                    echo " ### CR_Mail=$CR_Mail - Erreur envoi mail <br> \n";
+
+                    }
+
+                else
+
+                    {
+
+                    echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
+
+                    }
+
+
+        ?>
 
         
     </main>
@@ -386,7 +497,7 @@
     <footer class="bg-dark pt-5">
         <section class="container">
             <div class="row text-white">
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <div class=" text-uppercase my-logo">
                        <a href="#accueil">geoffrey</a> 
                     </div>
@@ -394,31 +505,17 @@
                         Développeur full stack
                     </p>
                 </div>
-                <div class="col-lg-3 text-center">
-                    <h3 class="text-uppercase">Pages</h3>
-                    <ul class="d-flex justify-content-around flex-column">
-                        <li>
-                            <a href="#devis">Devis</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Tarifs</a>
-                        </li>
-                        <li>
-                            <a href="#competence">Services</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-4 text-center">
                     <h3 class="text-uppercase">Lien rapide</h3>
                     <ul class="d-flex justify-content-around flex-column">
-                        <li><a data-toggle="modal" data-target="#modal-devis" href="#devis">Devis</a></li>
+                        <li><a  href="#devis">Devis</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><a href="#competence">Compétences</a></li>
                         <li><a href="#demos">Projets</a></li>
                         <li><a href="#accueil">Accueil</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 text-center">
+                <div class="col-lg-4 text-center">
                     <h3 class="text-uppercase">Adresse</h3>
                     <ul class="d-flex justify-content-around flex-column">
                         <li>53 Allée de la joie de vivre</li>
@@ -431,45 +528,13 @@
         </section>
 
         
-                <!-- DEBUT section #devis -->
-                <section id="devis" class="text-white py-2">
-                    <article class="container text-center">
-                        <h2 class="text-uppercase">Faites votre devis</h2>
-                        <button type="button" data-toggle="modal" data-target="#modal-devis" class="btn btn-primary text-uppercase text-white">Devis gratuit</button>
-                    </article>
-                </section>
-                <!-- FIN section #devis -->
+               
 
 
     </footer>
     <!-- FIN footer -->
 
-    <!-- DEBUT MODAL -->
-    
-    <!-- Modal DEVIS -->
-    <div class="modal fade" id="modal-devis" tabindex="-1" role="dialog" aria-labelledby="label-modal" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title " id="label-modal">Faites votre devis</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="container">
-                        
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal DEVIS -->
-
-    <!-- FIN MODAL -->
+  
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 

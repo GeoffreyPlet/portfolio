@@ -4,6 +4,14 @@ body{
 ul{
     padding: 0;
 }
+.my-span-color{
+    color: #d39e00;
+    cursor: pointer;
+}
+.my-span-color:hover{
+  
+    color: #ffc107;
+}
 .pointer{
     cursor: pointer;
 }
@@ -88,6 +96,10 @@ header .filtre{
     #demos .cadre:hover{
         transform: scale(1);
         background-position: bottom;
+    }
+    #demos .pointer:hover{
+        font: 700;
+        color: #ffc107;
     }
     #demos ul li{
         list-style: none;
