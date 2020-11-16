@@ -37,22 +37,65 @@
 
         <!-- DEBUT Filtre after-header -->
         <div class="filtre"> 
+                
         </div>
         <!-- FIN Filtre after-header -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="col-lg-12 position-absolute" style="bottom:20px; z-index: 2;">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Tarif</h2>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Freelance 0 - 2 ans d'expérience</h5>
+                        <p class="card-text">175€ - Jour Homme</p>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Prix modulabe selon les besoins du projet.
+                    </div>
+                </div>
+        </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <!--- DEBUT after-header -->
         <section id="after-header" class="container position-relative">
             <div class="row text-center flex-column h-100 justify-content-center text-white">
+                
                 <h1 class="text-uppercase">
                     Bienvenue sur <span class="text-warning">le site de Geoffrey</span>
                 </h1>
                 <p>
                     Développeur full stack, création & réalitation de projets Web.
                 </p>
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <button type="button" class="btn text-white w-50 btn-primary">Commencer maintenant</button> 
-                </div>
+                </div> -->
+                
             </div>
         </section>
         <!--- FIN after-header -->
@@ -162,6 +205,17 @@
                         <span class="text-warning ">02.</span> JavaScript
                     </p>
                 </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <a href="https://www.planspluriel.fr/">
+                        <div class="cadre planspluriel">
+
+                        </div>
+                        <p>
+                            <span class="text-warning ">03.</span> Planspluriel
+                        </p>
+                    </a>
+                </div>
                
             </div>
             <!-- FIN zone projets all -->
@@ -188,7 +242,16 @@
 
             <!-- DEBUT zone projets back -->
             <div class="row text-center" id="back" style="display: none;">
-                
+            <div class="col-lg-4 col-md-6">
+                    <a href="https://www.planspluriel.fr/">
+                        <div class="cadre planspluriel">
+
+                        </div>
+                        <p>
+                            <span class="text-warning ">01.</span> Planspluriel
+                        </p>
+                    </a>
+                </div>
             </div>
             <!-- FIN zone projets back -->
 
@@ -296,7 +359,7 @@
                                 Mise à niveau
                             </h3>
                             <p class="px-4 ">
-                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jours.<span class="my-span-color"> Voir les modalités de service.</span> 
+                                Profitez d’un service de refonte de site, d’ajouts de fonctionnalités et restez dans les goûts du jours.<!-- <span class="my-span-color"> Voir les modalités de service.</span>  -->
                             </p>
                         </div>
                     </div>
@@ -315,7 +378,7 @@
                                 Maintenance
                             </h3>
                             <p class="px-4">
-                                Besoin d’un développeur pour maintenir votre site : ajouts de contenus, debug. <span class="my-span-color">Regardez les différents services.</span>
+                                Besoin d’un développeur pour maintenir votre site : ajouts de contenus, debug. <!-- <span class="my-span-color">Regardez les différents services.</span> -->
                             </p>
                         </div>
                     </div>
@@ -375,7 +438,7 @@
 
     <?php
             if (isset($_POST)){
-            }
+            
 
  
 
@@ -468,24 +531,7 @@
 
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
-                
-
-                if ($CR_Mail === FALSE)
-
-                    {
-
-                    echo " ### CR_Mail=$CR_Mail - Erreur envoi mail <br> \n";
-
-                    }
-
-                else
-
-                    {
-
-                    echo " *** CR_Mail=$CR_Mail - Mail envoyé<br> \n";
-
-                    }
-
+            }
 
         ?>
 
