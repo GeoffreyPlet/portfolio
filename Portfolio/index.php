@@ -190,7 +190,7 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <a href="./projets/planspluriel.php" target="_blank">
+                    <a href="./projets/planspluriel.php">
                         <div class="cadre planspluriel">
 
                         </div>
@@ -228,7 +228,7 @@
             <!-- DEBUT zone projets back -->
             <div class="row text-center" id="back" style="display: none;">
             <div class="col-lg-4 col-md-6">
-                    <a href="./projets/planspluriel.php" target="_blank">
+                    <a href="./projets/planspluriel.php">
                         <div class="cadre planspluriel">
 
                         </div>
