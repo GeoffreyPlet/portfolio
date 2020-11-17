@@ -412,7 +412,7 @@
             <div class="form-row">
                 <div class="col form-group">
                     <select class="custom-select" name="chois">
-                        <option selected value="VIDE">Sous quel type de demande souhaitez-vous ?</option>
+                        <option selected value="VIDE">A définir</option>
                         <option value="Site vitrine">Site vitrine</option>
                         <option value="Site E-commerce">Site E-commerce</option>
                         <option value="Application">Application</option>
@@ -424,7 +424,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn my-btn-color"> <span style="color:#000;">Envoyer</span></button>
             </div>
           </form>
     </section>
@@ -623,7 +623,7 @@
             <div class="form-row">
                 <div class="col form-group">
                     <select class="custom-select" name="chois">
-                        <option selected value="VIDE">Sous quel type de demande souhaitez-vous ?</option>
+                        <option selected value="VIDE">A définir</option>
                         <option value="Site vitrine">Site vitrine</option>
                         <option value="Site E-commerce">Site E-commerce</option>
                         <option value="Application">Application</option>
@@ -635,7 +635,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-primary">Envoyer</button>
+                <button type="submit" class="btn my-btn-color"> <span  style="color:#000;">Envoyer</span> </button>
             </div>
           </form>
                 </div>
