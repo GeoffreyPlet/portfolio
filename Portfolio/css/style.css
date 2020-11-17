@@ -16,12 +16,12 @@ ul{
     
 }
 .my-span-color{
-    color: #d39e00;
+    color: #d39e00 !important;
     cursor: pointer;
 }
 .my-span-color:hover{
   
-    color: #ffc107;
+    color: #ffc107 !important;
 }
 .pointer{
     cursor: pointer;

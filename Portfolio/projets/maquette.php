@@ -20,30 +20,110 @@
 <body>
 
     <!-- DEBUT Header -->
-    <header id="accueil">
+        <header id="accueil">
 
-        <!-- DEBUT nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="nav" style="background-color:rgb(108, 117, 125) !important">
-            <div class="container">
-                <div class="cadre text-uppercase my-logo my-color-hover">
-                    <a href="../index.php">
-                        geoffrey
-                    </a>                   
+            <!-- DEBUT nav -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="nav" style="background-color:rgb(108, 117, 125) !important">
+                <div class="container">
+                    <div class="cadre text-uppercase my-logo my-color-hover">
+                        <a href="../index.php">
+                            geoffrey
+                        </a>                   
+                    </div>
+                    <div class="cadre text-uppercase my-logo my-color-hover">
+                        <a href="../index.php">
+                            retour
+                        </a>                   
+                    </div>
                 </div>
-                <div class="cadre text-uppercase my-logo my-color-hover">
-                    <a href="../index.php">
-                        retour
-                    </a>                   
-                </div>
-            </div>
-            
-          </nav>
-          <!-- FIN nav -->
+                
+            </nav>
+            <!-- FIN nav -->
+        </header>
     <!-- DEBUT Header -->
 
     <!-- DEBUT MAIN  -->
+        <main class="pt-5">
+            <div class="container pt-5" id="demos">
+                <div class="row flex-column">
+                    <h2>
+                        Objectif
+                    </h2>
+                    <p>Intégration HTML/CSS avec bootstrap, Création de la page accueil.
+                        <br>
+                        <span style="opacity:0.8;">PHP non intègré dans cette maquette</span>
+                    </p>
+                </div>
+                <div class="row">
+                    <h2 class="text-right w-100">
+                        Technologie
+                    </h2>
+                    <ul class="list-group" style="width: 100%; text-align: end;">
+                        <li class="list-item text-uppercase">
+                            css
+                        </li>
+                        <li class="list-item text-uppercase">
+                            html
+                        </li>
+                        <li class="list-item text-uppercase">
+                            bootstrap
+                        </li>
+                    </ul>
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="maquette/index.html">
+                            <div class="cadre projet-maquette front-1">
+
+                            </div>
+                            <p style="text-center">
+                                Front
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <a href="https://github.com/GeoffreyPlet/portfolio/tree/master/Portfolio/projets/maquette" class="my-span-color" target="_blank">GitHub lien</a>
+                </div>
+            </div>
+        </main>
     <!-- FIN MAIN  -->
 
+    <!-- DEBUT footer -->
+    <footer class="bg-dark pt-5">
+        <section class="container">
+            <div class="row text-white">
+                <div class="col-lg-4">
+                    <div class=" text-uppercase my-logo">
+                       <a href="#accueil">geoffrey</a> 
+                    </div>
+                    <p class="pt-4">
+                        Développeur full stack
+                    </p>
+                </div>
+                <div class="col-lg-8 text-center">
+                    <h3 class="text-uppercase">Adresse</h3>
+                    <ul class="d-flex justify-content-around flex-column">
+                        <li>53 Allée de la joie de vivre</li>
+                        <li>80000 Amiens</li>
+                        <li>geoffreyplett@gmail.com</li>
+                        <li>06.31.15.14.45</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+               
+
+
+    </footer>
+    <!-- FIN footer -->
+
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
