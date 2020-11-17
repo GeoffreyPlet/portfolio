@@ -45,7 +45,7 @@
     <!-- DEBUT MAIN  -->
         <main class="pt-5">
             <div class="container pt-5" id="demos">
-                <div class="row flex-column">
+                <div class="row flex-column text-center">
                     <h2>
                         Objectif
                     </h2>
@@ -53,22 +53,32 @@
                     </p>
                 </div>
                 <div class="row">
-                    <h2 class="text-right w-100">
-                        Technologie
-                    </h2>
-                    <ul class="list-group" style="width: 100%; text-align: end;">
-                        <li class="list-item text-uppercase">
-                            css
-                        </li>
-                        <li class="list-item text-uppercase">
-                            html
-                        </li>
-                        <li class="list-item text-uppercase">
-                            bootstrap
-                        </li>
-                        <li class="list-item text-uppercase">
-                            WordPress
-                        </li>
+                    <ul class="list-group d-flex flex-row justify-content-center flex-wrap" style="width: 100%; text-align: end;">
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                css
+                            </li>
+                        </div>
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                html
+                            </li>
+                        </div>
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                javascript
+                            </li>
+                        </div>
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                bootstrap
+                            </li>
+                        </div>
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                WordPress
+                            </li>
+                        </div>
                     </ul>
                 </div>
                 <div class="row justify-content-center mt-3">
@@ -77,7 +87,7 @@
                             <div class="cadre planspluriel">
 
                             </div>
-                            <p>
+                            <p class="text-center">
                                  Planspluriel
                             </p>
                         </a>

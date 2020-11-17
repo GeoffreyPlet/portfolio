@@ -46,20 +46,19 @@
         <main class="pt-5 mb-5">
             <div class="container pt-5" id="demos">
                 <div class="row flex-column">
-                    <h2>
+                    <h2 class="text-center">
                         Objectif
                     </h2>
-                    <p>Réalisation d'un petit jeux seulement réalisé en Javascript.
+                    <p class="text-center">Réalisation d'un petit jeux seulement réalisé en Javascript.
                     </p>
                 </div>
                 <div class="row">
-                    <h2 class="text-right w-100">
-                        Technologie
-                    </h2>
-                    <ul class="list-group" style="width: 100%; text-align: end;">
-                        <li class="list-item text-uppercase">
-                            javascript
-                        </li>
+                    <ul class="list-group d-flex flex-row justify-content-center flex-wrap" style="width: 100%; text-align: end;">
+                        <div class="cadre-projets mt-1">
+                            <li class="list-item text-uppercase">
+                                javascript
+                            </li>
+                        </div>
                     </ul>
                 </div>
                 <div class="row justify-content-center mt-3">
@@ -67,7 +66,7 @@
                             <div class="cadre projet-jeux">
 
                             </div>
-                            <p>
+                            <p class="text-center">
                                 JavaScript
                             </p>
                     </div>

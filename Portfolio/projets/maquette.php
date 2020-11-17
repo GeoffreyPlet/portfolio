@@ -46,27 +46,31 @@
         <main class="pt-5">
             <div class="container pt-5" id="demos">
                 <div class="row flex-column">
-                    <h2>
+                    <h2 class="text-center">
                         Objectif
                     </h2>
-                    <p>Intégration HTML/CSS avec bootstrap, Création de la page accueil.
+                    <p class="text-center">Intégration HTML/CSS avec bootstrap, Création de la page accueil.
                         <br>
                         <span style="opacity:0.8;">PHP non intègré dans cette maquette</span>
                     </p>
                 </div>
                 <div class="row">
-                    <h2 class="text-right w-100">
-                        Technologie
-                    </h2>
-                    <ul class="list-group" style="width: 100%; text-align: end;">
+                    <ul class="list-group d-flex flex-row justify-content-center flex-wrap" style="width: 100%; text-align: end;">
                         <li class="list-item text-uppercase">
-                            css
+                            <div class="cadre-projets mt-1">
+                                css
+                            </div>
+                            
                         </li>
                         <li class="list-item text-uppercase">
-                            html
+                            <div class="cadre-projets mt-1">
+                                html
+                            </div>
                         </li>
                         <li class="list-item text-uppercase">
-                            bootstrap
+                            <div class="cadre-projets mt-1">
+                                bootstrap
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +80,7 @@
                             <div class="cadre projet-maquette front-1">
 
                             </div>
-                            <p style="text-center">
+                            <p class="text-center">
                                 Front
                             </p>
                         </a>
@@ -90,7 +94,7 @@
     <!-- FIN MAIN  -->
 
     <!-- DEBUT footer -->
-    <footer class="bg-dark pt-5">
+    <footer class="bg-dark pt-5" style="margin-top : 180px;">
         <section class="container">
             <div class="row text-white">
                 <div class="col-lg-4">

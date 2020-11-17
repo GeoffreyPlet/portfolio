@@ -7,6 +7,12 @@ ul{
 .my-color-hover{
     color: #fff;
 }
+.cadre-projets {
+    border: 2px solid #ffc107;
+    padding: 6px 36px;
+    margin: 0px 12px;
+    color: #ffc107;
+}
 .my-color-hover:hover{
     color: #ffc107;
     border-color: #ffc107;
