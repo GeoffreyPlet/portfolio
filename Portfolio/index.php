@@ -179,12 +179,14 @@
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="cadre projet-jeux">
+                    <a href="./projets/jeux.php">
+                        <div class="cadre projet-jeux">
 
-                    </div>
-                    <p>
-                        <span class="text-warning ">02.</span> JavaScript
-                    </p>
+                        </div>
+                        <p>
+                            <span class="text-warning ">02.</span> JavaScript
+                        </p>
+                    </a>
                 </div>
 
                 <div class="col-lg-4 col-md-6">

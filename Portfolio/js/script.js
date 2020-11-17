@@ -6,9 +6,7 @@
     $(document).ready(function(){
 
   
-      $('.projet-jeux').click(function(){
-        window.open('projets/JEUX/index.html', '_blank');
-      });
+     
       
         $("#btn-back").click(function(){
             $("#vuejs").animate({
