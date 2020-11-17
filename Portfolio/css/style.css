@@ -7,7 +7,9 @@ ul{
 .my-color-hover{
     color: #fff;
 }
-
+.btn:focus{
+    box-shadow: none !important;
+}
 .cadre-projets {
     border: 2px solid #ffc107;
     padding: 6px 36px;

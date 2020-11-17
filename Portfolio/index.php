@@ -385,27 +385,27 @@
 
     <!-- DEBUT section #contact -->
     <section class="container" id="contact">
-        <h2 class="text-uppercase text-center">Contact</h2>
+        <h2 class="text-uppercase text-center">Contact *</h2>
         <form class="pt-5" method="POST" action="index.php">
             <div class="form-row">
               <div class="col form-group">
-                    <label for="first-name">Nom</label>
+                    <label for="first-name">Nom *</label>
                     <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
               </div>
               <div class="col form-group">
-                    <label for="last-name">Prénom</label>
+                    <label for="last-name">Prénom *</label>
                     <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
               </div>
             </div>
             <div class="form-row">
                 <div class="col form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                     <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
                 </div>
             </div>
             <div class="form-row">
                 <div class="col form-group">
-                    <label for="message">Votre Message</label>
+                    <label for="message">Votre Message *</label>
                     <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
                 </div>
             </div>
@@ -431,7 +431,7 @@
     <!-- FIN section #contact -->
 
     <?php
-            if (isset($_POST)){
+/*             if (isset($_POST)){
             
 
  
@@ -525,7 +525,7 @@
 
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
-            } 
+            } */ 
 
         ?>
 
@@ -586,61 +586,76 @@
         </button>
       </div>
       <div class="modal-body">
+
+      <!-- DEBUT CONTAINER MODAL CONTACT -->
         <div class="container">
-            <div class="row flex-column">
+
+        <!-- DEBUT ROW CONTACT MANUEL -->
+            <div class="row flex-column ">
+                
                 <h4>
                     Téléphone : <span style="font-size: 0.75em;">06.31.15.14.45</span>
                 </h4>
                 <h4>
                     E-mail : <span style="font-size: 0.75em;">geoffreyplett@gmail.com</span>
                 </h4>
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <p>Tout nos devis sont gratuit. <span class="my-span-color" style="font-size:0.75em;">Faire un devis</span></p>
+                </div>
             </div>
-            <div class="row">
+        <!-- FIN ROW CONTACT MANUEL -->
+
+        <!-- DEBUT ROW CONTACT FORMULAIRE -->
+            <div class="row ">
                 <div class="col-lg-12">
                      <form class="pt-5" method="POST" action="index.php">
-            <div class="form-row">
-              <div class="col form-group">
-                    <label for="first-name">Nom</label>
-                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
-              </div>
-              <div class="col form-group">
-                    <label for="last-name">Prénom</label>
-                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
-              </div>
-            </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
+                        <div class="form-row">
+                            <div class="col form-group">
+                                    <label for="first-name">Nom *</label>
+                                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
+                            </div>
+                            <div class="col form-group">
+                                    <label for="last-name">Prénom *</label>
+                                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <label for="message">Votre Message *</label>
+                                <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col form-group">
+                                <select class="custom-select" name="chois">
+                                    <option selected value="VIDE">A définir</option>
+                                    <option value="Site vitrine">Site vitrine</option>
+                                    <option value="Site E-commerce">Site E-commerce</option>
+                                    <option value="Application">Application</option>
+                                    <option value="Refonte">Refonte</option>
+                                    <option value="Maintenance">Maintenance</option>
+                                    <option value="Mise à niveau">Mise à niveau</option>
+                                </select>
+                                <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn my-btn-color"> <span  style="color:#000;">Envoyer</span> </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <label for="message">Votre Message</label>
-                    <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <select class="custom-select" name="chois">
-                        <option selected value="VIDE">A définir</option>
-                        <option value="Site vitrine">Site vitrine</option>
-                        <option value="Site E-commerce">Site E-commerce</option>
-                        <option value="Application">Application</option>
-                        <option value="Refonte">Refonte</option>
-                        <option value="Maintenance">Maintenance</option>
-                        <option value="Mise à niveau">Mise à niveau</option>
-                      </select>
-                      <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn my-btn-color"> <span  style="color:#000;">Envoyer</span> </button>
-            </div>
-          </form>
-                </div>
-            </div>
+            <!-- FIN ROW CONTACT FORMULAIRE -->
+
         </div>
+        <!-- FIN CONTAINER MODAL CONTACT -->
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn my-btn-color" data-dismiss="modal"><span style="color:#000;">Annuler</span> </button>
