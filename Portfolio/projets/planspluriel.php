@@ -49,7 +49,7 @@
                     <h2>
                         Objectif
                     </h2>
-                    <p>Intégration des produit grâce à WordPress. Mise en page des produits.
+                    <p>Intégration des produits grâce à WordPress. Mise en page des produits.
                     </p>
                 </div>
                 <div class="row">

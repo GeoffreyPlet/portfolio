@@ -49,7 +49,7 @@
                     <h2 class="text-center">
                         Objectif
                     </h2>
-                    <p class="text-center">Réalisation d'un petit jeux seulement réalisé en Javascript.
+                    <p class="text-center">Réalisation d'un petit jeux seulement fait en Javascript.
                     </p>
                 </div>
                 <div class="row">
