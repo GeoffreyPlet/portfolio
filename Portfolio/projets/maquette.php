@@ -72,7 +72,7 @@
                 </div>
                 <div class="row justify-content-center mt-3">
                     <div class="col-lg-4 col-md-6">
-                        <a href="maquette/index.html">
+                        <a href="maquette/index.html" target="_blank">
                             <div class="cadre projet-maquette front-1">
 
                             </div>

@@ -211,13 +211,15 @@
 
             <!-- DEBUT zone projets front -->
             <div class="row text-center" id="front" style="display: none;">
-                <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6">
+                <a href="./projets/maquette.php">
                     <div class="cadre projet-maquette front-1">
 
                     </div>
                     <p>
-                        <span class="text-warning">01.</span> Front
+                        <span class="text-warning ">01.</span> Front
                     </p>
+                </a>
                 </div>
                 
             </div>
@@ -420,7 +422,7 @@
     <!-- FIN section #contact -->
 
     <?php
-            /* if (isset($_POST)){
+            if (isset($_POST)){
             
 
  
@@ -515,7 +517,7 @@
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
             }
- */
+
         ?>
 
         

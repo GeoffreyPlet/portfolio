@@ -43,15 +43,13 @@
     <!-- DEBUT Header -->
 
     <!-- DEBUT MAIN  -->
-        <main class="pt-5">
+        <main class="pt-5 mb-5">
             <div class="container pt-5" id="demos">
                 <div class="row flex-column">
                     <h2>
                         Objectif
                     </h2>
-                    <p>Intégration HTML/CSS avec bootstrap, Création de la page accueil.
-                        <br>
-                        <span style="opacity:0.8;">PHP non intègré dans cette maquette</span>
+                    <p>Réalisation d'un petit jeux seulement réalisé en Javascript.
                     </p>
                 </div>
                 <div class="row">
@@ -60,13 +58,7 @@
                     </h2>
                     <ul class="list-group" style="width: 100%; text-align: end;">
                         <li class="list-item text-uppercase">
-                            css
-                        </li>
-                        <li class="list-item text-uppercase">
-                            html
-                        </li>
-                        <li class="list-item text-uppercase">
-                            bootstrap
+                            javascript
                         </li>
                     </ul>
                 </div>
@@ -80,15 +72,12 @@
                             </p>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <a href="https://github.com/GeoffreyPlet/portfolio/tree/master/Portfolio/projets/jeux" class="my-span-color" target="_blank">GitHub lien</a>
-                </div>
             </div>
         </main>
     <!-- FIN MAIN  -->
 
     <!-- DEBUT footer -->
-    <footer class="bg-dark pt-5">
+    <footer class="bg-dark pt-5" style="margin-top: 180px;">
         <section class="container">
             <div class="row text-white">
                 <div class="col-lg-4">
