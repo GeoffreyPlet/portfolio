@@ -67,7 +67,7 @@
                     <button type="button" class="btn text-white w-50 btn-primary">Commencer maintenant</button> 
                 </div> -->
 
-                <div class="col-lg-12 position-absolute" style="bottom:20px; z-index: 2;">
+                <div class="col-lg-12 position-absolute" style="bottom:20px;">
                     <div class="card text-center">
                         <div class="card-footer text-muted">
                             Prix modulabe selon les besoins du projet.
@@ -168,12 +168,14 @@
             <div class="row text-center" id="all" > 
                 
                 <div class="col-lg-4 col-md-6">
+                <a href="./projets/maquette.php">
                     <div class="cadre projet-maquette front-1">
 
                     </div>
                     <p>
                         <span class="text-warning ">01.</span> Front
                     </p>
+                </a>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
@@ -375,17 +377,17 @@
             <div class="form-row">
               <div class="col form-group">
                     <label for="first-name">Nom</label>
-                    <input type="text" class="form-control" placeholder="First name" id="first-name" name="nom">
+                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
               </div>
               <div class="col form-group">
                     <label for="last-name">Prénom</label>
-                    <input type="text" class="form-control" placeholder="Last name" id="last-name" name="prenom">
+                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
               </div>
             </div>
             <div class="form-row">
                 <div class="col form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" placeholder="Email" id="email" name="mail">
+                    <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
                 </div>
             </div>
             <div class="form-row">
@@ -416,7 +418,7 @@
     <!-- FIN section #contact -->
 
     <?php
-            if (isset($_POST)){
+            /* if (isset($_POST)){
             
 
  
@@ -511,7 +513,7 @@
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
             }
-
+ */
         ?>
 
         

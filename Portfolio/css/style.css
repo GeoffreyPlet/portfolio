@@ -4,6 +4,17 @@ body{
 ul{
     padding: 0;
 }
+.my-color-hover{
+    color: #fff;
+}
+.my-color-hover:hover{
+    color: #ffc107;
+    border-color: #ffc107;
+}
+.my-color-hover:hover a{
+    color: #ffc107 !important;
+    
+}
 .my-span-color{
     color: #d39e00;
     cursor: pointer;
