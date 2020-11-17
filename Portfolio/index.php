@@ -63,9 +63,18 @@
                 <p>
                     Développeur full stack, création & réalitation de projets Web.
                 </p>
-                <!-- <div class="text-center">
-                    <button type="button" class="btn text-white w-50 btn-primary">Commencer maintenant</button> 
-                </div> -->
+               <div class="row justify-content-center">
+                   <div class="col-lg-3">
+                       <button class="btn my-btn-color px-5 py-2" data-toggle="modal" data-target="#modal-contact">
+                                Contactez-nous
+                       </button>
+                   </div>
+                   <div class="col-lg-3">
+                       <button class="btn my-btn-color px-5 py-2" id="btn-devis">
+                                Faire un devis
+                       </button>
+                   </div>
+               </div>
 
                 <div class="col-lg-12 position-absolute" style="bottom:20px;">
                     <div class="card text-center">
@@ -516,7 +525,7 @@
 
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
-            }
+            } 
 
         ?>
 
@@ -563,6 +572,83 @@
 
     </footer>
     <!-- FIN footer -->
+
+
+
+<!-- DEBUT MODAL CONTACT -->
+<div class="modal fade" id="modal-contact" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="max-width: 1200px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title ml-auto">Contact</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+            <div class="row flex-column">
+                <h4>
+                    Téléphone : <span style="font-size: 0.75em;">06.31.15.14.45</span>
+                </h4>
+                <h4>
+                    E-mail : <span style="font-size: 0.75em;">geoffreyplett@gmail.com</span>
+                </h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                     <form class="pt-5" method="POST" action="index.php">
+            <div class="form-row">
+              <div class="col form-group">
+                    <label for="first-name">Nom</label>
+                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
+              </div>
+              <div class="col form-group">
+                    <label for="last-name">Prénom</label>
+                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="message">Votre Message</label>
+                    <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <select class="custom-select" name="chois">
+                        <option selected value="VIDE">Sous quel type de demande souhaitez-vous ?</option>
+                        <option value="Site vitrine">Site vitrine</option>
+                        <option value="Site E-commerce">Site E-commerce</option>
+                        <option value="Application">Application</option>
+                        <option value="Refonte">Refonte</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Mise à niveau">Mise à niveau</option>
+                      </select>
+                      <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn my-btn-color" data-dismiss="modal"><span style="color:#000;">Annuler</span> </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN MODAL CONTACT -->
 
   
 
