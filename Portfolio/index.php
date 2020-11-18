@@ -66,7 +66,7 @@
                <div class="row justify-content-center">
                    <div class="col-lg-3">
                        <button class="btn my-btn-color px-5 py-2" data-toggle="modal" data-target="#modal-contact">
-                                Contactez-nous
+                                Contacter moi
                        </button>
                    </div>
                    <div class="col-lg-3">
@@ -334,7 +334,7 @@
                                 Développement
                             </h3>
                             <p class="px-4 ">
-                                Framwork (VueJS, voir les autres framwork) ou CMS Wordpress pour un Développement qui correspond à vos besoins.
+                                Framwork (VueJS<!-- , voir les autres framwork -->) ou CMS Wordpress pour un Développement qui correspond à vos besoins.
                             </p>
                         </div>
                     </div>
@@ -385,7 +385,7 @@
 
     <!-- DEBUT section #contact -->
     <section class="container" id="contact">
-        <h2 class="text-uppercase text-center">Contact *</h2>
+        <h2 class="text-uppercase text-center">Contact</h2>
         <form class="pt-5" method="POST" action="index.php">
             <div class="form-row">
               <div class="col form-group">
@@ -431,7 +431,7 @@
     <!-- FIN section #contact -->
 
     <?php
-/*             if (isset($_POST)){
+            if (isset($_POST)){
             
 
  
@@ -525,7 +525,7 @@
 
                 $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
 
-            } */ 
+            } 
 
         ?>
 
@@ -600,7 +600,7 @@
                     E-mail : <span style="font-size: 0.75em;">geoffreyplett@gmail.com</span>
                 </h4>
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <p>Tout nos devis sont gratuit. <span class="my-span-color" style="font-size:0.75em;">Faire un devis</span></p>
+                    <p>Tous les devis sont gratuits. <span class="my-span-color" style="font-size:0.75em;">Faire un devis</span></p>
                 </div>
             </div>
         <!-- FIN ROW CONTACT MANUEL -->
