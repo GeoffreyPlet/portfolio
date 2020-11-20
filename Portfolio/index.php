@@ -64,12 +64,12 @@
                     Développeur full stack, création & réalitation de projets Web.
                 </p>
                <div class="row justify-content-center">
-                   <div class="col-lg-3">
+                   <div class="col-lg-3 mt-2">
                        <button class="btn my-btn-color px-5 py-2" data-toggle="modal" data-target="#modal-contact">
                                 Contacter moi
                        </button>
                    </div>
-                   <div class="col-lg-3">
+                   <div class="col-lg-3 mt-2">
                        <button class="btn my-btn-color px-5 py-2" id="btn-devis">
                                 Faire un devis
                        </button>
@@ -431,7 +431,7 @@
     <!-- FIN section #contact -->
 
     <?php
-            if (isset($_POST)){
+            if (isset($_POST) && !empty($_POST)){
             
 
  
