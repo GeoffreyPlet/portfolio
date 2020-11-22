@@ -70,19 +70,13 @@
                        </button>
                    </div>
                    <div class="col-lg-3 mt-2">
+                   <a href="./page/devis.php">
                        <button class="btn my-btn-color px-5 py-2" id="btn-devis">
                                 Faire un devis
                        </button>
+                    </a>
                    </div>
                </div>
-
-                <div class="col-lg-12 position-absolute" style="bottom:20px;">
-                    <div class="card text-center">
-                        <div class="card-footer text-muted">
-                            Prix modulabe selon les besoins du projet.
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </section>

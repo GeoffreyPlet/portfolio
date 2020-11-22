@@ -210,31 +210,18 @@ footer a:hover{
 }
 /* FIN Class footer */
 
-/* DEBUT modal */
-    /* DEBUT modal devis */
-    #modal-devis .cadre{
-        
-        color: #000;
+
+/* DEBUT page devis */
+#page-devis .form-row{
+    margin-top: 2rem;
+}
+    
+    input[type=radio]{
+        position: relative;
+        top: 6px;
     }
-    #modal-devis .cadre:hover{
-        cursor: pointer;
-        background-color: #000;
-        color: #fff;
-    }
-    #modal-devis h2{
-        font-size: 22px;
-    }
-    #modal-devis h3{
-        font-size: 1.17em;
-    }
-    #modal-devis .form-check-label{
-        font-size: 11px;
-    }
-    #modal-devis .mt-4 p{
-        font-size: 12px;
-    }
-    /* FIN modal devis */
-/* FIN modal */
+/* FIN page devis */
+
 
 
 
