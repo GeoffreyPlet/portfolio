@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-    <title>Geoffrey Plet - Developpeur freelance, Amiens.</title>
+    <title>Geoffrey Plet - Développeur freelance, Amiens.</title>
     <meta name="description" content="Développement de site web - Front & Back.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="keywords" content="site internet, web, application web, développement, hébergement web, développement web, symfony, wordpress, magento, prestashop, intégration web, freelance">
     <meta name="author" content="Geoffrey Plet">
     <meta property="og:site_name" content="Geoffrey Plet">
-    <meta property="og:title" content="Geoffrey Plet - Developpeur freelance, Amiens.">
+    <meta property="og:title" content="Geoffrey Plet - Développeur freelance, Amiens.">
     <meta property="og:description" content="Développement de site web - Front & Back.">
     <meta property="og:image" content="./img/back.jpg">
     <meta property="og:url" content="https://geoffreyplet.com/">
@@ -46,7 +46,7 @@
         <main class="pt-5">
             <div class="container mt-5" id="page-devis">
                 <h2>Faire votre demande de devis gratuit</h2>
-                <form method="POST">
+                <form method="POST" action="../index.php">
 
                     <!-- DEBUT ROW 2 INPUT -->
                         <div class="form-row">
@@ -142,43 +142,43 @@
                             <div class="d-flex flex-column">
 
                                 <div class="d-flex">
-                                    <input type="radio" name="type">
+                                    <input type="radio" name="type" value="commerce-sans-back">
                                     <label class="pl-2" for="">E-commerce sans back office</label>
                                 </div>
 
                                 <div class="d-flex">
-                                    <input type="radio" name="type">
+                                    <input type="radio" name="type" value="commerce-avec-back">
                                     <label class="pl-2" for="">E-commerce avec back office</label>
                                 </div>
                                 
                                 <div class="d-flex">
-                                    <input type="radio" name="type">
+                                    <input type="radio" name="type" value="vitrine-sans-back">
                                     <label class="pl-2" for="">Site vitrine sans back office</label>
                                 </div>
                                 
                                 <div class="d-flex">
-                                    <input type="radio" name="type">
+                                    <input type="radio" name="type" value="vitrine-avec-back">
                                     <label class="pl-2" for="">Site vitrine avec back office</label>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
-                           <h3>Designe</h3>
+                           <h3>Design</h3>
                            <div class="d-flex flex-column">
                                 <div class="d-flex">
-                                    <input type="radio" name="design">
+                                    <input type="radio" name="design" value="thème">
                                     <label class="pl-2" for="">Thème</label>
                                 </div>
                                 <div class="d-flex">
-                                    <input type="radio" name="design">
+                                    <input type="radio" name="design" value="refonte">
                                     <label class="pl-2" for="">Refonte grâce au design existant</label>
                                 </div>
                                 <div class="d-flex">
-                                    <input type="radio" name="design">
+                                    <input type="radio" name="design" value="délà-réalisé">
                                     <label class="pl-2" for="">Déjà réalisé</label>
                                 </div>
                                 <div class="d-flex">
-                                    <input type="radio" name="design">
+                                    <input type="radio" name="design" value="sur-mesure">
                                     <label class="pl-2" for="">Sur mesure</label>
                                 </div>
                             </div>

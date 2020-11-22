@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-    <title>Geoffrey Plet - Developpeur freelance, Amiens.</title>
+    <title>Geoffrey Plet - Développeur freelance, Amiens.</title>
     <meta name="description" content="Développement de site web - Front & Back.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="keywords" content="site internet, web, application web, développement, hébergement web, développement web, symfony, wordpress, magento, prestashop, intégration web, freelance">
     <meta name="author" content="Geoffrey Plet">
     <meta property="og:site_name" content="Geoffrey Plet">
-    <meta property="og:title" content="Geoffrey Plet - Developpeur freelance, Amiens.">
+    <meta property="og:title" content="Geoffrey Plet - Développeur freelance, Amiens.">
     <meta property="og:description" content="Développement de site web - Front & Back.">
     <meta property="og:image" content="./img/back.jpg">
     <meta property="og:url" content="https://geoffreyplet.com/">
