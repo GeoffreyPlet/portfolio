@@ -92,8 +92,8 @@
                     <ul class="d-flex justify-content-around flex-column">
                         <li>53 Allée de la joie de vivre</li>
                         <li>80000 Amiens</li>
-                        <li>geoffreyplett@gmail.com</li>
-                        <li>06.31.15.14.45</li>
+                        <li>geoffrey.plet.developpeur@gmail.com</li>
+                        <li>06 31 15 14 45</li>
                     </ul>
                 </div>
             </div>

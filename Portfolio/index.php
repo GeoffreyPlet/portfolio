@@ -35,13 +35,39 @@
 
         <!-- DEBUT nav -->
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="nav">
-            <div class="container">
-                <div class="cadre text-uppercase my-logo">
-                    <a href="">
-                        geoffrey
-                    </a>                   
-                </div>
+        <div class="container flex-nowrap">
+            <div class="cadre text-uppercase my-logo">
+                <a href="">
+                    geoffrey
+                </a>                   
             </div>
+
+            
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto d-flex flex-row">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#accueil" id="li-accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#demos" id="li-demos">Réalisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competence" id="li-competence">Compétence</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" id="li-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+           
+
+            
+            
             
           </nav>
           <!-- FIN nav -->
@@ -58,7 +84,7 @@
             <div class="row text-center flex-column h-100 justify-content-center text-white">
                 
                 <h1 class="text-uppercase">
-                    Bienvenue sur <span class="text-warning">le site de Geoffrey</span>
+                    Développeur <span class="text-warning">front & back</span>
                 </h1>
                 <p>
                     Développeur full stack, création & réalitation de projets Web.
@@ -66,7 +92,7 @@
                <div class="row justify-content-center">
                    <div class="col-lg-3 mt-2">
                        <button class="btn my-btn-color px-5 py-2" data-toggle="modal" data-target="#modal-contact">
-                                Contacter moi
+                                Me contacter
                        </button>
                    </div>
                    <div class="col-lg-3 mt-2">
@@ -155,7 +181,7 @@
 
         <!-- DEBUT section #demos -->
         <section id="demos" class="container">
-            <h2 class="text-uppercase text-center">Geoffrey <span class="text-warning">projets</span></h2>
+            <h2 class="text-uppercase text-center">Mes <span class="text-warning">Réalisations</span></h2>
             <hr class="w-25">
             <p class="text-center">Sélectionner un projet</p>
             <div class="row pt-5">
@@ -176,7 +202,7 @@
 
                     </div>
                     <p>
-                        <span class="text-warning ">01.</span> Front
+                        <span class="text-warning ">01 Entrainement</span> - Page accueil
                     </p>
                 </a>
                 </div>
@@ -187,7 +213,7 @@
 
                         </div>
                         <p>
-                            <span class="text-warning ">02.</span> JavaScript
+                            <span class="text-warning ">02 Entrainement</span> - Jeu
                         </p>
                     </a>
                 </div>
@@ -198,7 +224,7 @@
 
                         </div>
                         <p>
-                            <span class="text-warning ">03.</span> Planspluriel
+                            <span class="text-warning ">03 Planpluriel</span> - Wordpress
                         </p>
                     </a>
                 </div>
@@ -214,15 +240,25 @@
 
             <!-- DEBUT zone projets front -->
             <div class="row text-center" id="front" style="display: none;">
-            <div class="col-lg-4 col-md-6">
-                <a href="./projets/maquette.php">
-                    <div class="cadre projet-maquette front-1">
+                <div class="col-lg-4 col-md-6">
+                    <a href="./projets/maquette.php">
+                        <div class="cadre projet-maquette front-1">
 
-                    </div>
-                    <p>
-                        <span class="text-warning ">01.</span> Front
-                    </p>
-                </a>
+                        </div>
+                        <p>
+                            <span class="text-warning ">01 Entrainement</span> - Page accueil
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="./projets/jeux.php">
+                        <div class="cadre projet-jeux">
+
+                        </div>
+                        <p>
+                            <span class="text-warning ">02 Entrainement</span> - Jeu
+                        </p>
+                    </a>
                 </div>
                 
             </div>
@@ -236,7 +272,7 @@
 
                         </div>
                         <p>
-                            <span class="text-warning ">01.</span> Planspluriel
+                            <span class="text-warning ">01 Planspluriel</span> - Wordpress
                         </p>
                     </a>
                 </div>
@@ -409,7 +445,6 @@
                         <option selected value="VIDE">A définir</option>
                         <option value="Site vitrine">Site vitrine</option>
                         <option value="Site E-commerce">Site E-commerce</option>
-                        <option value="Application">Application</option>
                         <option value="Refonte">Refonte</option>
                         <option value="Maintenance">Maintenance</option>
                         <option value="Mise à niveau">Mise à niveau</option>
@@ -438,7 +473,7 @@
 
                 
 
-                $to    = "geoffreyplett@gmail.com";
+                $to    = "geoffrey.plet.developpeur@gmail.com";
 
                 
 
@@ -540,21 +575,16 @@
                     </p>
                 </div>
                 <div class="col-lg-4 text-center">
-                    <h3 class="text-uppercase">Lien rapide</h3>
-                    <ul class="d-flex justify-content-around flex-column">
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#competence">Compétences</a></li>
-                        <li><a href="#demos">Projets</a></li>
-                        <li><a href="#accueil">Accueil</a></li>
-                    </ul>
+                    <h3 class="text-uppercase">Entreprise</h3>
+                    
                 </div>
                 <div class="col-lg-4 text-center">
                     <h3 class="text-uppercase">Adresse</h3>
                     <ul class="d-flex justify-content-around flex-column">
                         <li>53 Allée de la joie de vivre</li>
                         <li>80000 Amiens</li>
-                        <li>geoffreyplett@gmail.com</li>
-                        <li>06.31.15.14.45</li>
+                        <li>geoffrey.plet.developpeur@gmail.com</li>
+                        <li>06 31 15 14 45</li>
                     </ul>
                 </div>
             </div>
@@ -588,13 +618,13 @@
             <div class="row flex-column ">
                 
                 <h4>
-                    Téléphone : <span style="font-size: 0.75em;">06.31.15.14.45</span>
+                    Téléphone : <span style="font-size: 0.75em;">06 31 15 14 45</span>
                 </h4>
                 <h4>
-                    E-mail : <span style="font-size: 0.75em;">geoffreyplett@gmail.com</span>
+                    E-mail : <span style="font-size: 0.75em;">geoffrey.plet.developpeur@gmail.com</span>
                 </h4>
                 <div class="col-lg-12 d-flex justify-content-center">
-                    <p>Tous les devis sont gratuits. <span class="my-span-color" style="font-size:0.75em;">Faire un devis</span></p>
+                    <p>Tous les devis sont gratuits. <a href="page/devis.php"><span class="my-span-color" style="font-size:0.75em;">Faire un devis</span></p></a>
                 </div>
             </div>
         <!-- FIN ROW CONTACT MANUEL -->

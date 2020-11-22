@@ -94,6 +94,104 @@ function navFunction(){
     
     
 }
+
+$(window).scroll(function(){
+  
+  
+  //REALISATION ZONE
+  if($(window).scrollTop() >= $('#demos').position().top - 88 && $(window).scrollTop() < $('#competence').position().top - 88){
+    $('#li-demos').css({
+      'padding': '0.5rem',
+      'border': '1px solid #ffc107',
+      'background-color' : '#ffc107',
+    });
+    $('#li-competence').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-accueil').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-contact').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+  }
+
+  //COMPETENCE ZONE
+  else if($(window).scrollTop() >= $('#competence').position().top - 88 && $(window).scrollTop() < $('#contact').position().top - 88){
+    $('#li-competence').css({
+      'padding': '0.5rem',
+      'border': '1px solid #ffc107',
+      'background-color' : '#ffc107',
+    });
+    $('#li-demos').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-accueil').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-contact').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+  }
+
+  //ACCUEIL ZONE
+  else if($(window).scrollTop() >= $('#accueil').position().top && $(window).scrollTop() < $('#demos').position().top - 88){
+    $('#li-accueil').css({
+      'padding': '0.5rem',
+      'border': '1px solid #ffc107',
+      'background-color' : '#ffc107',
+    });
+    $('#li-competence').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-demos').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-contact').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+  }
+  else{
+    $('#li-contact').css({
+      'padding': '0.5rem',
+      'border': '1px solid #ffc107',
+      'background-color' : '#ffc107',
+    });
+    $('#li-competence').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-accueil').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+    $('#li-demos').css({
+      'padding': '0 0.5rem',
+      'border': 'none',
+      'background-color' : 'transparent',
+    });
+  }
+})
  
 
     

@@ -91,8 +91,11 @@ header nav{
     width: 100%;
     z-index: 1;
 }
+nav li a{
+    color: #fff !important;
+}
 header .filtre{
-    height: 980px;
+    height: 1200px;
     background-color: #000;
     position: absolute;
     opacity: 0.4;
@@ -118,7 +121,8 @@ header .card-footer{
 }
     /* DEBUT Class #after-header */
     #after-header{
-        height: 969px;
+        min-height: 1200px;
+        height: 1200px;
     }
     /* FIN Class #after-header */
 

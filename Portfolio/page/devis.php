@@ -46,7 +46,7 @@
         <main class="pt-5">
             <div class="container mt-5" id="page-devis">
                 <h2>Faire votre demande de devis gratuit</h2>
-                <form method="POST" action="../index.php">
+                <form method="POST">
 
                     <!-- DEBUT ROW 2 INPUT -->
                         <div class="form-row">
@@ -209,8 +209,8 @@
                     <ul class="d-flex justify-content-around flex-column">
                         <li>53 Allée de la joie de vivre</li>
                         <li>80000 Amiens</li>
-                        <li>geoffreyplett@gmail.com</li>
-                        <li>06.31.15.14.45</li>
+                        <li>geoffrey.plet.developpeur@gmail.com</li>
+                        <li>06 31 15 14 45</li>
                     </ul>
                 </div>
             </div>
@@ -237,7 +237,7 @@
 
                 
 
-                $to    = "geoffreyplett@gmail.com";
+                $to    = "geoffrey.plet.developpeur@gmail.com";
 
                 
 
