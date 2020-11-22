@@ -283,7 +283,7 @@
 
                 $mail_Data .= "<br> \n";
 
-                $mail_Data .= 'Un client vous a contacté pour un projet de technologie'.$_POST["techno"].'<br>';
+                $mail_Data .= 'Un client vous a contacté pour un projet de technologie : '.$_POST["techno"].'<br>';
                 $mail_Data .= 'Avec un budget de : '.$_POST["budget"].'<br>';
                 $mail_Data .= 'De type : '.$_POST["type"].'<br>';
                 $mail_Data .= 'De design : '.$_POST["design"].'<br>';
