@@ -183,7 +183,7 @@
         <section id="demos" class="container">
             <h2 class="text-uppercase text-center">Mes <span class="text-warning">Réalisations</span></h2>
             <hr class="w-25">
-            <p class="text-center">Sélectionner un projet</p>
+            <p class="text-center">Sélectionner une réalisation</p>
             <div class="row pt-5">
                 <ul class="text-uppercase d-flex w-100 justify-content-around">
                     <li class="pointer" onclick="affiche('all')" id="btn-all">Tout</li>
@@ -413,73 +413,65 @@
         </section>
         <!-- FIN section #competence -->
 
-    <!-- DEBUT section #contact -->
-    <section class="container" id="contact">
-        <h2 class="text-uppercase text-center">Contact</h2>
-        <form class="pt-5" method="POST" action="index.php">
-            <div class="form-row">
-              <div class="col form-group">
-                    <label for="first-name">Nom *</label>
-                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom">
-              </div>
-              <div class="col form-group">
-                    <label for="last-name">Prénom *</label>
-                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom">
-              </div>
-            </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" placeholder="E-mail" id="email" name="mail">
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <label for="message">Votre Message *</label>
-                    <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message"></textarea>
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="col form-group">
-                    <select class="custom-select" name="chois">
-                        <option selected value="VIDE">A définir</option>
-                        <option value="Site vitrine">Site vitrine</option>
-                        <option value="Site E-commerce">Site E-commerce</option>
-                        <option value="Refonte">Refonte</option>
-                        <option value="Maintenance">Maintenance</option>
-                        <option value="Mise à niveau">Mise à niveau</option>
-                      </select>
-                      <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn my-btn-color"> <span style="color:#000;">Envoyer</span></button>
-            </div>
-          </form>
-    </section>
-    <!-- FIN section #contact -->
 
-    <?php
-            if (isset($_POST) && !empty($_POST)){
+
+        <?php
+            $err = [];
+            $prenom = null;
+            $name = null;
+            $mail =null;
+            $message = null;
+            if (!empty($_POST)){
+
+                $name = $_POST['nom'];
+                $prenom = $_POST['prenom'];
+                $mail = $_POST['mail'];
+                $message = $_POST['message'];
+
+                
+                /* DEBUT VERIF NOM */
+                    if(ctype_digit($name)){
+                        $err['name'] = 'Votre nom doit être en lettre';
+                    }else if(strlen($name) === 0){
+                        $err['name'] = 'Remplir votre nom';
+                    }
+                /* FIN VERIF NOM */
+
+                /* DEBUT VERIF PRENOM */
+                    if(ctype_digit($prenom)){
+                        $err['prenom'] = 'Votre prénom doit être en lettre';
+                    }else if(strlen($prenom) === 0){
+                        $err['prenom'] = 'Remplir votre prénom';
+                    }
+                /* FIN VERIF PRENOM */
+
+                /* DEBUT VERIF MAIL */
+                    if(strlen($mail) === 0){
+                        $err['mail'] = 'Le mail ne peut pas être vide';
+                    }else if(filter_var($mail, FILTER_VALIDATE_EMAIL) === false){
+                        $err['mail'] = 'Votre mail n\'est pas valide';
+                    }
+                /* FIN VERIF MAIL */
+
+                /* DEBUT VERIF MESSAGE */
+                    if(strlen($message) === 0){
+                        $err['message'] = 'Le message ne peut pas être vide';
+                    }else if(strlen($message) < 100){
+                        $err['message'] = 'Votre méssage est trop court';
+                    }
+                /* FIN VERIF MESSAGE */
+
+                
+
             
+               if(empty($err)){
 
- 
-
-                // Test fonction mail();
-
-                
-
-                // *** A configurer
-
-                
-
+               
+                //Mon E-mail
                 $to    = "geoffrey.plet.developpeur@gmail.com";
 
-                
-
-                // adresse MAIL OVH liée à l’hébergement.
-
-                $from  = $_POST["mail"];
+                //Personne qui m'écris
+                $from  = $mail;
 
                 
 
@@ -492,7 +484,6 @@
                 
 
                 $JOUR  = date("Y-m-d");
-
                 $HEURE = date("H:i");
 
                 
@@ -515,11 +506,11 @@
 
                 
 
-                $mail_Data .= ''.$_POST['nom'].', '.$_POST['prenom'].': <b>'.$Subject.'</b> <br>';
+                $mail_Data .= ''.$name.', '.$prenom.': <b>'.$Subject.'</b> <br>';
 
                 $mail_Data .= "<br> \n";
 
-                $mail_Data .= ''.$_POST["message"].'<br>';
+                $mail_Data .= ''.$message.'<br>';
 
 
                 $mail_Data .= "</body> \n";
@@ -552,11 +543,88 @@
 
                 
 
-                $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers);
+                $CR_Mail = @mail ($to, $Subject, $mail_Data, $headers); 
+               } 
 
             } 
 
         ?>
+
+
+
+    <!-- DEBUT section #contact -->
+    <section class="container" id="contact">
+        <h2 class="text-uppercase text-center">Contact</h2>
+        <form class="pt-5" method="POST" action="#contact">
+            <div class="form-row">
+              <div class="col form-group">
+                    <label for="first-name">Nom *</label>
+                    <input type="text" class="form-control" placeholder="Nom" id="first-name" name="nom" value="<?php echo $name; ?>">
+                    <?php
+                        if(isset($err['name'])){
+                            echo '<span class="text-danger">'.$err['name'].'</span>';
+                        }
+                        
+                    ?>
+              </div>
+              <div class="col form-group">
+                    <label for="last-name">Prénom *</label>
+                    <input type="text" class="form-control" placeholder="Prénom" id="last-name" name="prenom" value="<?php echo $prenom; ?>">
+                    <?php
+                        if(isset($err['prenom'])){
+                            echo '<span class="text-danger">'.$err['prenom'].'</span>';
+                        }
+                    ?>
+              </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="email">Email *</label>
+                    <input type="text" class="form-control" placeholder="E-mail" id="email" name="mail" value="<?php echo $mail; ?>">
+                    <?php
+                        if(isset($err['mail'])){
+                            echo '<span class="text-danger">'.$err['mail'].'</span>';
+                        }
+                    ?>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="message">Votre Message *</label>
+                    <textarea  id="message" cols="30" rows="10" class="form-control" placeholder=" Exprimez vos besoins ici." name="message" value="<?php echo $message; ?>"></textarea>
+                    <?php
+                        if(isset($err['message'])){
+                            echo '<span class="text-danger">'.$err['message'].'</span>';
+                        }
+                    ?>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <select class="custom-select" name="chois">
+                        <option selected value="VIDE">A définir</option>
+                        <option value="Site vitrine">Site vitrine</option>
+                        <option value="Site E-commerce">Site E-commerce</option>
+                        <option value="Refonte">Refonte</option>
+                        <option value="Maintenance">Maintenance</option>
+                        <option value="Mise à niveau">Mise à niveau</option>
+                      </select>
+                      <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn my-btn-color"> <span style="color:#000;">Envoyer</span></button>
+            </div>
+            <?php 
+                if(empty($err)){
+                    echo '<span class="text-success"> Votre message a bien été envoyer </span>';
+                }
+            ?>
+          </form>
+    </section>
+    <!-- FIN section #contact -->
+
+  
 
         
     </main>
@@ -568,14 +636,15 @@
             <div class="row text-white">
                 <div class="col-lg-4">
                     <div class=" text-uppercase my-logo">
-                       <a href="#accueil">geoffrey</a> 
+                       <a href="cv.docx">geoffrey</a> 
                     </div>
-                    <p class="pt-4">
-                        Développeur full stack
+                    <p class="">
+                        Télécharger mon CV
                     </p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <h3 class="text-uppercase">Entreprise</h3>
+                    <p>Numéro SIRET: 87851393600012</p>
                     
                 </div>
                 <div class="col-lg-4 text-center">

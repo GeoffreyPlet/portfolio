@@ -101,13 +101,18 @@
     <footer class="bg-dark pt-5" style="margin-top : 180px;">
         <section class="container">
             <div class="row text-white">
-                <div class="col-lg-4">
+            <div class="col-lg-4">
                     <div class=" text-uppercase my-logo">
-                       <a href="#accueil">geoffrey</a> 
+                       <a href="../cv.docx">geoffrey</a> 
                     </div>
-                    <p class="pt-4">
-                        Développeur full stack
+                    <p class="">
+                        Télécharger mon CV
                     </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="text-uppercase">Entreprise</h3>
+                    <p>Numéro SIRET: 87851393600012</p>
+                    
                 </div>
                 <div class="col-lg-8 text-center">
                     <h3 class="text-uppercase">Adresse</h3>

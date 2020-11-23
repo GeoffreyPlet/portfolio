@@ -142,23 +142,12 @@
                             <div class="d-flex flex-column">
 
                                 <div class="d-flex">
-                                    <input type="radio" name="type" value="commerce-sans-back">
-                                    <label class="pl-2" for="">E-commerce sans back office</label>
+                                    <input type="radio" name="type" value="E-commerce">
+                                    <label class="pl-2" for="">E-commerce</label>
                                 </div>
-
                                 <div class="d-flex">
-                                    <input type="radio" name="type" value="commerce-avec-back">
-                                    <label class="pl-2" for="">E-commerce avec back office</label>
-                                </div>
-                                
-                                <div class="d-flex">
-                                    <input type="radio" name="type" value="vitrine-sans-back">
-                                    <label class="pl-2" for="">Site vitrine sans back office</label>
-                                </div>
-                                
-                                <div class="d-flex">
-                                    <input type="radio" name="type" value="vitrine-avec-back">
-                                    <label class="pl-2" for="">Site vitrine avec back office</label>
+                                    <input type="radio" name="type" value="vitrine">
+                                    <label class="pl-2" for="">Site vitrine</label>
                                 </div>
                             </div>
                         </div>
@@ -184,6 +173,23 @@
                             </div>
                         </div>
                     </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <h3 class="m-0">Site administrable</h3>
+                            <p>Bénéficiez d'une partie d'administrable dans votre site, mettez vous même le contenue à jour.</p>
+                            <div class="d-flex flex-column">
+
+                                <div class="d-flex">
+                                    <input type="radio" name="back" value="Back-office">
+                                    <label class="pl-2" for="">Avec</label>
+                                </div>
+                                <div class="d-flex">
+                                    <input type="radio" name="back" value="Sans-back-office">
+                                    <label class="pl-2" for="">Sans</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="text-center mt-5">
                         <button class="btn my-btn-color"><span style="color: #000;">Envoyer</span> </button>
                     </div>
@@ -196,13 +202,18 @@
     <footer class="bg-dark pt-5" style="margin-top : 180px;">
         <section class="container">
             <div class="row text-white">
-                <div class="col-lg-4">
+            <div class="col-lg-4">
                     <div class=" text-uppercase my-logo">
-                       <a href="#accueil">geoffrey</a> 
+                       <a href="../cv.docx">geoffrey</a> 
                     </div>
-                    <p class="pt-4">
-                        Développeur full stack
+                    <p class="">
+                        Télécharger mon CV
                     </p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3 class="text-uppercase">Entreprise</h3>
+                    <p>Numéro SIRET: 87851393600012</p>
+                    
                 </div>
                 <div class="col-lg-8 text-center">
                     <h3 class="text-uppercase">Adresse</h3>
@@ -261,7 +272,7 @@
 
                 
 
-                $Subject = ''.$_POST['chois'].' - '.$JOUR.' '.$HEURE.'';
+                $Subject = ''.$_POST['back'].' - '.$JOUR.' '.$HEURE.'';
 
                 
 
@@ -299,7 +310,6 @@
                 $headers .= "Content-type: text/html; charset=iso-8859-1 \n";
 
                 $headers .= "From: $from  \n";
-
                 $headers .= "Disposition-Notification-To: $from  \n";
 
                 
