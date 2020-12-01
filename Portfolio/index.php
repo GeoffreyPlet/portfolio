@@ -421,7 +421,7 @@
             $name = null;
             $mail =null;
             $message = null;
-            if (!empty($_POST)){
+            if (!empty($_POST) && isset($_POST)){
 
                 $name = $_POST['nom'];
                 $prenom = $_POST['prenom'];
@@ -616,7 +616,7 @@
                 <button type="submit" class="btn my-btn-color"> <span style="color:#000;">Envoyer</span></button>
             </div>
             <?php 
-                if(empty($err)){
+                if(empty($err) && (!empty($_POST) && isset($_POST))){
                     echo '<span class="text-success"> Votre message a bien été envoyer </span>';
                 }
             ?>
@@ -636,7 +636,7 @@
             <div class="row text-white">
                 <div class="col-lg-4">
                     <div class=" text-uppercase my-logo">
-                       <a href="cv.docx">geoffrey</a> 
+                       <a href="cv.pdf" target="_blank">geoffrey</a> 
                     </div>
                     <p class="">
                         Télécharger mon CV
@@ -741,6 +741,11 @@
                         <div class="text-center">
                             <button type="submit" class="btn my-btn-color"> <span  style="color:#000;">Envoyer</span> </button>
                         </div>
+                        <?php 
+                            if(empty($err) && (!empty($_POST) && isset($_POST))){
+                                echo '<span class="text-success"> Votre message a bien été envoyer </span>';
+                            }
+                        ?>
                     </form>
                 </div>
             </div>

@@ -19,32 +19,13 @@
 </head>
 <body>
 
-    <!-- DEBUT Header -->
-        <header id="accueil">
-
-            <!-- DEBUT nav -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent" id="nav" style="background-color:rgb(108, 117, 125) !important">
-                <div class="container">
-                    <div class="cadre text-uppercase my-logo my-color-hover">
-                        <a href="../index.php">
-                            geoffrey
-                        </a>                   
-                    </div>
-                    <div class="cadre text-uppercase my-logo my-color-hover">
-                        <a href="../index.php">
-                            retour
-                        </a>                   
-                    </div>
-                </div>
-                
-            </nav>
-            <!-- FIN nav -->
-        </header>
-    <!-- DEBUT Header -->
+    <?php
+        require('../layer/header.php');
+    ?>
 
     <!-- DEBUT MAIN  -->
-        <main class="pt-5">
-            <div class="container pt-5" id="demos">
+        <main class="pt-5 d-flex" style="height: 834px;">
+            <div class="container pt-5 m-auto" id="demos">
                 <div class="row flex-column text-center">
                     <h2>
                         Objectif
@@ -97,41 +78,9 @@
         </main>
     <!-- FIN MAIN  -->
 
-    <!-- DEBUT footer -->
-    <footer class="bg-dark pt-5" style="margin-top : 180px;">
-        <section class="container">
-            <div class="row text-white">
-            <div class="col-lg-4">
-                    <div class=" text-uppercase my-logo">
-                       <a href="../cv.docx">geoffrey</a> 
-                    </div>
-                    <p class="">
-                        Télécharger mon CV
-                    </p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <h3 class="text-uppercase">Entreprise</h3>
-                    <p>Numéro SIRET: 87851393600012</p>
-                    
-                </div>
-                <div class="col-lg-8 text-center">
-                    <h3 class="text-uppercase">Adresse</h3>
-                    <ul class="d-flex justify-content-around flex-column">
-                        <li>53 Allée de la joie de vivre</li>
-                        <li>80000 Amiens</li>
-                        <li>geoffrey.plet.developpeur@gmail.com</li>
-                        <li>06 31 15 14 45</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        
-               
-
-
-    </footer>
-    <!-- FIN footer -->
+    <?php
+        require('../layer/footer.php');
+    ?>
 
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
