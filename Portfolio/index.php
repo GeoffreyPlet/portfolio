@@ -738,7 +738,7 @@
                                 <small class="form-text text-muted">Vérifiez que tous les champs ont été remplis.</small>
                             </div>
                         </div>
-                        <div class="text-center">
+                        <div class="text-center d-none" id="modal-btn-valide">
                             <button type="submit" class="btn my-btn-color"> <span  style="color:#000;">Envoyer</span> </button>
                         </div>
                         <?php 

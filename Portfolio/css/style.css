@@ -43,6 +43,7 @@ ul{
 }
 .my-span-color:hover{
   
+    text-decoration: none !important;
     color: #ffc107 !important;
 }
 .pointer{

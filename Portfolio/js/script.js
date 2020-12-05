@@ -191,7 +191,30 @@ $(window).scroll(function(){
       'background-color' : 'transparent',
     });
   }
-})
+});
+
+/* DEBUT SCRIPT FOR MODAL CONTACT */
+  $('#modal-contact').keyup(function(){
+    var err = [$('#modal-contact #first-name').val(), $('#modal-contact #last-name').val(), $('#modal-contact #email').val(), $('#modal-contact #message').val(), $('#modal-contact select').val()];
+    var nbErr = false;
+    for(let i = 0; i< err.length; i++){
+      if(err[i] != ''){
+        nbErr = true;
+      }
+      else{
+        nbErr = false;
+        break;
+      }
+    }
+    if(nbErr === true){
+      $('#modal-btn-valide').removeClass('d-none');
+    }
+    else{
+      $('#modal-btn-valide').addClass('d-none');
+    }
+  })
+
+/* FIN SCRIPT FOR MODAL CONTACT */
  
 
     
